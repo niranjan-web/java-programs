@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation=" 
+	http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.bean.SportsCars" name="sportscars">
+		<property name="carBrandName" value="dodge" />
+		<property name="carName" value="challenger hellcat" />
+		<property name="carPrice" value="50000" />
+		<property name="carEngineType" value="6litre v8 engine" />
+		<property name="carTopSpeed" value="326" />
+		<property name="bike" ref="sportsbikes" />
+	</bean>
+
+	<bean class="com.bean.SportsBike" name="sportsbikes">
+		<property name="bikeBrandName" value="bmw" />
+		<property name="bikeName" value="s1000 RR" />
+		<property name="bikePrice" value="30000" />
+		<property name="bikeEngineType" value="four cylinder engine" />
+		<property name="bikeTopSpeed" value="300" />
+	</bean>
+
+	<bean class="com.bean.ProgrammingLanguages"
+		name="programminglanguages">
+		<property name="name">
+			<list>
+				<value>go</value>
+				<value>perl</value>
+				<value>kotlin</value>
+				<value>csharp</value>
+				<value>assemply</value>
+
+			</list>
+		</property>
+		<property name="function">
+			<set>
+				<value>for apple related software</value>
+				<value>for apple related software</value>
+				<value>for android and desktop related software</value>
+				<value>for gaming related software</value>
+				<value>for hardware related software</value>
+
+			</set>
+
+		</property>
+		<property name="mapRef">
+			<map>
+				<entry key="java" value="oops" />
+				<entry key="c" value="procedural language" />
+				<entry key="html" value="markup language" />
+
+			</map>
+
+
+		</property>
+
+
+
+	</bean>
+
+
+</beans>
