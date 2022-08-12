@@ -40,7 +40,8 @@ public class MenuDrivenClass {
                 while (true) {
                     try {
                         System.out.print("Enter your EmployerId:");
-                        empId = Integer.parseInt(in.next());
+                       // empId = Integer.parseInt(in.next());
+                        empId = in.nextInt();
 
                         System.out.print("Enter your Name:");
                         empName = scan.nextLine();

@@ -10,7 +10,7 @@ public class RecursioDemo {
          * System.out.println("enter the number"); long num = scan.nextInt();
          * System.out.println(method(num));
          */
-       method1(1);
+      System.out.println(method(5)); 
 
     }
     public static long method(long num)

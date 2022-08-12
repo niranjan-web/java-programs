@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class InterestCalculator 
 {
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) 
 	{
 	    final Scanner input = new Scanner(System.in); 
@@ -46,6 +49,7 @@ public class InterestCalculator
 			}break;    //to exit the for loop
 		}
 		//System.out.println("thanks for using.");  //exit message
+		input.close();
 	}
 }
 

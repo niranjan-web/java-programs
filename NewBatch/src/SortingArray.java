@@ -14,12 +14,17 @@ public class SortingArray {
 			System.out.println("enter the value of "+ctr +" element :");
 			arr[ctr] = input.nextInt();
 			}
-		
+		for(int aray:arr)
+		{
+			System.out.println(aray);
+		}
 		//sorting the array
 		System.out.println("the sorting array is :");
-		for (int i = 0; i<arrSize; i++) 
-		{
-			for(int j = 1; j< arrSize-i; j++) 
+//		for (int i = 0; i<arrSize; i++) 
+//		{
+		int i =0;
+		while( i<arrSize) {
+			for(int j = 1; j< arrSize; j++) //1,2,3,4,5,
 			{
 				//compare the adjacents value and swap it
 				if(arr[j]<arr[j-1]) 
@@ -28,7 +33,7 @@ public class SortingArray {
 					arr[j] =arr[j-1];
 			        arr[j-1] = temp;
 				}
-		}
+		}i++;
 		} 
 		//printing the sorted array using foreach loop
 		for (int myArray : arr) {
