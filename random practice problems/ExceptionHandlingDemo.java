@@ -11,8 +11,8 @@ public class ExceptionHandlingDemo {
 
     }
     public static String callName(String firstName,String lastName) throws MyException{
-       // try 
-       // {
+        try 
+        {
         if(firstName.isEmpty() || lastName.isEmpty()) {
             throw new MyException("you have to enter the name");
         }
@@ -21,14 +21,14 @@ public class ExceptionHandlingDemo {
             String name = firstName.trim() + lastName.trim();
              return name;
         }
-    //}
-//     catch(MyException ex) 
-//        {
-//        return"you have to enter a name";
-//    }
+    }
+     catch(MyException ex) 
+        {
+        return"you have to enter a name";
+    }
 
-}
-}
+
+
 class MyException extends Exception{
     
     String msg;
