@@ -5,10 +5,10 @@ public class StringCheck
 {
 	public static void main(String[] args) 
 	{
-		Scanner input  = new Scanner(System.in);
+		//Scanner input  = new Scanner(System.in);
 		
-		System.out.println("enter the the string to check :");
-		String str = input.nextLine();
+	//	System.out.println("enter the the string to check :");
+		String str = "hellh#hello";
 		
 		  for (int i = 0; i < str.length(); i++) 
 		  {

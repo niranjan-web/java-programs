@@ -29,11 +29,11 @@ public class Hello {
 		}
 		
 		final long startTimeAl = System.nanoTime();
-		namesArrayList.remove(50000);
+		namesArrayList.add(5000,5);
 		final long endTimeAl = System.nanoTime();
 		
 		final long startTimeLl = System.nanoTime();
-		namesLinkedList.remove(50000);
+		namesLinkedList.add(5000,5);
 		final long endTimeLl = System.nanoTime();
 		
 		final long totalTimeAl = endTimeAl - startTimeAl;
