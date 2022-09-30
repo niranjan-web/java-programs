@@ -18,7 +18,7 @@ public class FileWriterDemo {
 		BufferedWriter writer = new BufferedWriter(new FileWriter("input.txt"));
 		String arr[] = {"ragu","rahul","anothony","aravind","akon"};
 		
-		writer.write("hello my name is niranjan and now i'm unemployement ");
+		writer.write("hello my name is niranjan");
 		for(int i=0; i<arr.length;i++)
 		{
 			writer.write("\n" +arr[i]);
