@@ -21,7 +21,7 @@ public class Hello {
 		List<Integer> namesArrayList =  new ArrayList<>();
 		List<Integer> namesLinkedList = new LinkedList<>();
 		
-		for(int i=0; i<1000000; i++)
+		for(int i=0; i<10000; i++)
 		{
 			namesArrayList.add(i);
 			namesLinkedList.add(i); 
@@ -29,11 +29,11 @@ public class Hello {
 		}
 		
 		final long startTimeAl = System.nanoTime();
-		namesArrayList.add(5000,5);
+		namesArrayList.add(20,5);
 		final long endTimeAl = System.nanoTime();
 		
 		final long startTimeLl = System.nanoTime();
-		namesLinkedList.add(5000,5);
+		namesLinkedList.add(20,5);
 		final long endTimeLl = System.nanoTime();
 		
 		final long totalTimeAl = endTimeAl - startTimeAl;

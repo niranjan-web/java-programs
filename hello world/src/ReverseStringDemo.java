@@ -4,7 +4,8 @@ public class ReverseStringDemo {
 	public static void main(String[] args) {
 		String name = "niranjan";
 		char []arr = name.toCharArray();
-		
+		int num = 8767;
+	
 		int i= name.length()-1;
 		char result;
 //		while(i>=0)
