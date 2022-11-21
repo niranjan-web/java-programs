@@ -2,7 +2,7 @@ package Patterns;
 
 public class PatternNo1 {
 	public static void main(String[] args) {
-		pattern3(5);
+		pattern1(5);
 	}
 	
 	static void pattern3(int n)

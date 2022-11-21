@@ -18,8 +18,14 @@ public class LamdaDemo1 {
     }
 
 }
-
+@FunctionalInterface
 interface Hello {
 
     void method();
+    
+    
+    default void method1()
+    {
+    	System.out.println("hello");
+    }
 }

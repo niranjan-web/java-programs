@@ -8,8 +8,8 @@ public class FileDemo {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader reader = new BufferedReader(new FileReader("output.txt"));
-		reader.readLine();
-		String str;
+		
+		String str = "";
 		while((str =reader.readLine())!=null)
 		{
 			System.out.println(str);
