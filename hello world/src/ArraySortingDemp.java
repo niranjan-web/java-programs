@@ -16,7 +16,7 @@ public class ArraySortingDemp {
 			int j=i+1;
 			while(j<arr.length)
 			{
-				if(arr[i]<arr[j]) 
+				if(arr[i]>arr[j]) 
 				{
 					int temp = arr[i];
 					arr[i] = arr[j];
